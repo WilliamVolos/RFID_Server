@@ -1,5 +1,5 @@
 rootProject.name = "RFID_Server"
-//include("server_main")
+include("server_main")
 
 pluginManagement {
     val jgitver: String by settings

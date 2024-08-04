@@ -5,19 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcfa69e1-b062-40ec-9b43-c5600c650daa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/docker/runDb.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/StartBeforeApplicationRun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/StartServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/config/FactoryStaticReaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/config/FactoryStaticReadersImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/config/ReaderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/controllers/ReaderRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/exception/ReaderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/Journal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/Port.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/ReaderModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/ReaderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/constant/AntennaEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/constant/ReadTagBankEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/dto/AntennaEnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/dto/EventReadTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/dto/JournalTagInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/dto/ReaderRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/model/dto/ReaderStatusInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/repository/JournalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/repository/PortRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/repository/ReaderModelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/repository/ReaderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/repository/ReaderStatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/JournalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/JournalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderModelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderModelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/dbservice/ReaderStatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/mainservice/MainReaderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/mainservice/MainReaderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/poolservice/ActiveReadersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/poolservice/ActiveReadersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/poolservice/ReadTagsPoolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/services/poolservice/ReadTagsPoolServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/sessionmanager/TransactionAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/sessionmanager/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/sessionmanager/TransactionManagerSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/threads/CheckReadersThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/threads/ConnectionReaderCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/threads/JournalThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/threads/ReaderThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/uhf_operation/CheckCurrentTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/uhf_operation/ConnectionStateCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/uhf_operation/ReaderURA4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/uhf_operation/StaticReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/java/serverRfid/uhf_operation/TagCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_main/src/main/resources/db/migration/V1__initial_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +91,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/Projects/JavaProfessional/RFID_Server",
+    "last_opened_file_path": "D:/Work/Projects/JavaProfessional/RFID_Server/server_main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Projects\JavaProfessional\RFID_Server\server_main" />
       <recent name="D:\Work\Projects\JavaProfessional\RFID_Server" />
     </key>
   </component>
@@ -67,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722736775606</updated>
-      <workItem from="1722736776253" duration="424000" />
+      <workItem from="1722736776253" duration="1056000" />
     </task>
     <servers />
   </component>
