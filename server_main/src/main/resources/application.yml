@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5430/demoDB
+    username: usr
+    password: pwd
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: TRACE
+  file:
+    name: ./logs/app.log
+    logrotate:
+      max-history: 10
+      max-size: 10MB
+  pattern:
+    #    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %-5level - %msg%n"
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+application:
+  delayVisibleTag: 3
